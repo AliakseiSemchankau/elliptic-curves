@@ -4,7 +4,7 @@ of groups on elliptic curves in finite fields.
 Namely, file main.py contains the solution to §I.9.2
 in Nail Koblitz book "Introduction to Elliptic Curves and Modular Forms".
 
-Classes FQ and FQK correspond to fields F_q and F_{q**d}, respectively.
+Classes FQ and FQK correspond to fields $F_q$ and $F_{q^d}$, respectively.
 Creating of instance of the second one includes inner creating of irreducible 
 polynomial of degree d, etc.
 Once the instance of FQ or FQK is created, it is supposed to be used throughtout 
@@ -12,15 +12,15 @@ the program. In particular, instance of FQK is being provided to each instance o
 class PowerTerm, while FQ is provided to class QPoly.
 
 Class QPoly reflects general polynomial in F_q, while each instance of PowerTerm
-reflects element x^i in F_{q**d} or zero in the same field.
+reflects element x^i in F_{q^d} or zero in the same field.
 
 Class EllipticCurve works with Elliptic Curves in field F_q.
 Instance EllipticCurve(a, b, q) corresponds to y*y = x*x*x + a*x + b in F_q.
 Point on EllipticCurve belong to F_q x F_q.
 
-Class FQKEllipticCurve works in F_{q ** d} for d > 1.
-Instance FQKEllipticCurve(a, b, q, d) corresponds to y*y = x*x*x + a*x + b in F_{q**d}.
-Points on FQKEllipticCurve belong to F_{q**d} x F_{q**d}.
+Class FQKEllipticCurve works in F_{q ^ d} for d > 1.
+Instance FQKEllipticCurve(a, b, q, d) corresponds to y*y = x*x*x + a*x + b in F_{q^d}.
+Points on FQKEllipticCurve belong to F_{q^d} x F_{q^d}.
 
 Both this classes have method add (which adds any two points on the curve), and 
 get_elements (which enumerates all points on the curve).
