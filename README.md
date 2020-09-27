@@ -39,17 +39,17 @@ such Z_n;
 
 In file main.py we obtain those representations of group induced by y*y = x*x*x - x
 in the following fields:
-F_3    : Z_2 ⊕ Z_2
-F_5    : Z_4 ⊕ Z_2
-F_7    : Z_4 ⊕ Z_2
-F_11   : Z_2 ⊕ Z_2 ⊕ Z_3
-F_13   : Z_4 ⊕ Z_2
-F_17   : Z_4 ⊕ Z_4
-F_19   : Z_2 ⊕ Z_2 ⊕ Z_5
-F_23   : Z_4 ⊕ Z_2 ⊕ Z_3
-F_71   : Z_4 ⊕ Z_2 ⊕ Z_9
-F_9    : Z_4 ⊕ Z_4
-F_27   : Z_2 ⊕ Z_2 ⊕ Z_7
-F_1331 : Z_2 ⊕ Z_2 ⊕ Z_9 ⊕ Z_37
+F_3.    : Z_2 ⊕ Z_2
+F_5.    : Z_4 ⊕ Z_2
+F_7.    : Z_4 ⊕ Z_2
+F_11.   : Z_2 ⊕ Z_2 ⊕ Z_3
+F_13.   : Z_4 ⊕ Z_2
+F_17.   : Z_4 ⊕ Z_4
+F_19.   : Z_2 ⊕ Z_2 ⊕ Z_5
+F_23.   : Z_4 ⊕ Z_2 ⊕ Z_3
+F_71.   : Z_4 ⊕ Z_2 ⊕ Z_9
+F_9.    : Z_4 ⊕ Z_4
+F_27.   : Z_2 ⊕ Z_2 ⊕ Z_7
+F_1331. : Z_2 ⊕ Z_2 ⊕ Z_9 ⊕ Z_37
 
 
