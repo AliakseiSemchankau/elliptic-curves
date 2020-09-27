@@ -31,22 +31,6 @@ def write_products(elements, table, generators):
 
 	return element_to_product
 
-def gen_elements(E, q, d):
-	elements = ["inf"]
-	x_values = [PowerTerm(t, E.Fqd) for t in range(q ** d - 1)]
-	x_values.append(PowerTerm(None, E.Fqd))
-	for x in x_values:
-		val = E.calc_x(x)
-		if val.power is None:
-			y = PowerTerm(None, E.Fqd)
-			elements.append((x, y))
-			continue
-		if val.power % 2 == 0:
-			y = PowerTerm(val.power // 2, E.Fqd)
-			elements.append((x, y))
-			elements.append((x, -y))
-	return elements
-
 def gen_table(elements, E):
 	table = {}
 	for i in range(len(elements)):
@@ -64,7 +48,8 @@ def gen_orders(elements, table):
 		orders[el] = len(get_orbit(el, table))
 	return orders
 
-# return (#prime divisors of x, #least prime, #x)
+# return (#prime divisors of x, #least prime, #x).
+# used to order generators of the group, later.
 def w_num(x):
 	if x == 1:
 		return (100, 0, 0)
