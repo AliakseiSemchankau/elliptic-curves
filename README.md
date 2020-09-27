@@ -4,7 +4,7 @@ of groups on elliptic curves in finite fields.
 Namely, file main.py contains the solution to §I.9.2
 in Nail Koblitz book "Introduction to Elliptic Curves and Modular Forms".
 
-Classes FQ and FQK correspond to fields $F_q$ and $F_{q^d}$, respectively.
+Classes FQ and FQK correspond to fields F_q and F_{q^d}, respectively.
 Creating of instance of the second one includes inner creating of irreducible 
 polynomial of degree d, etc.
 Once the instance of FQ or FQK is created, it is supposed to be used throughtout 
@@ -15,11 +15,11 @@ Class QPoly reflects general polynomial in F_q, while each instance of PowerTerm
 reflects element x^i in F_{q^d} or zero in the same field.
 
 Class EllipticCurve works with Elliptic Curves in field F_q.
-Instance EllipticCurve(a, b, q) corresponds to y*y = x*x*x + a*x + b in F_q.
+Instance EllipticCurve(a, b, q) corresponds to y^2 = x^3 + ax + b in F_q.
 Point on EllipticCurve belong to F_q x F_q.
 
 Class FQKEllipticCurve works in F_{q ^ d} for d > 1.
-Instance FQKEllipticCurve(a, b, q, d) corresponds to y*y = x*x*x + a*x + b in F_{q^d}.
+Instance FQKEllipticCurve(a, b, q, d) corresponds to y^2 = x^3 + ax + b in F_{q^d}.
 Points on FQKEllipticCurve belong to F_{q^d} x F_{q^d}.
 
 Both this classes have method add (which adds any two points on the curve), and 
@@ -34,10 +34,10 @@ from the curve;
 4) as any finite Abelian group (and group of elliptic curve points clearly is) might
 be represented as Prod {Z_n}, where n are prime power, we find generators of each 
 such Z_n;
-5) finally, we write mapping point -> g_1^k_1 * g_2^k_2 * ... * g_t^k_t to field 
+5) finally, we write mapping point -> g_1^k_1 x g_2^k_2 x ... x g_t^k_t to field 
 "element_to_product", where g_1, g_2, ..., g_t are generators.
 
-In file main.py we obtain those representations of group induced by y*y = x*x*x - x
+In file main.py we obtain those representations of group induced by y^2 = x^3 - x
 in the following fields:\
 F_3    : Z_2 ⊕ Z_2\
 F_5    : Z_4 ⊕ Z_2\
