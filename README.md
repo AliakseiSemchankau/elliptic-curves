@@ -13,6 +13,8 @@ class PowerTerm, while FQ is provided to class QPoly.
 
 Class QPoly reflects general polynomial in F_q, while each instance of PowerTerm
 reflects element x^i in F_{q^d} or zero in the same field.
+The Polynomial classes implementations were inspired by
+https://jeremykun.com/2014/03/13/programming-with-finite-fields/ .
 
 Class EllipticCurve works with Elliptic Curves in field F_q.
 Instance EllipticCurve(a, b, q) corresponds to y^2 = x^3 + ax + b in F_q.
