@@ -4,6 +4,20 @@ of groups on elliptic curves in finite fields.
 Namely, file main.py contains the solution to §I.9.2
 in Nail Koblitz book "Introduction to Elliptic Curves and Modular Forms".
 
+In short, elliptic curve is the set of rational points (x, y) satisfying equation
+y^2 = x^3 + ax + b for some given constants a, b.
+One can define an abelian group (with elements = points) with the following
+group law: for given points A, B we draw a line, and the third point of intersection
+of this line with curve we call C. Then we define -C to be A + B.
+By Mordell Theorem, this group is finitely generated.
+
+However, in here we condider this curve and this group in fields of q and q^d elements.
+By Hesse Theorem, the size of the group, induced by such a curve in the field of q elements, differs from q+1 by at most 2\sqrt{q}.
+
+In here, we find a representation of this group.
+
+Here the details:
+
 Classes FQ and FQK correspond to fields F_q and F_{q^d}, respectively.
 Creating of instance of the second one includes inner creating of irreducible 
 polynomial of degree d, etc.
